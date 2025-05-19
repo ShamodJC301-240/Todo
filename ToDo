@@ -13,8 +13,20 @@ def to_do_list():
             print("4. ")
             print()
             print()
+
+            choice = input("Choose an option: ")
+
+            if choice == '1':
+                task = input("Add task here: ")
+            elif choice == '2':
+                print("What task do we delete today")
+            elif choice == '3':
+                print("Tracking tasks... Here are the tasks ")
+            elif choice == '4':
+                print("")
             break
         except KeyboardInterrupt:
             print("\nExiting...")
             break
 
+to_do_list()
